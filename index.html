@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eReactHarvest</title>
+    <link rel="icon" href="./public/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/harvest.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="extract">
+      <h1 class="extract-title">Extract Css class for jsx markup</h1>
+      <div class="extract-form">
+        <label class="extract-form-label" for="markup-textarea"
+          >Paste your markup</label
+        >
+        <textarea class="extract-form-textarea" id="markup-textarea"></textarea>
+        <button class="extract-form-btn" id="markup-btn">Convert</button
+        ><button class="extract-form-paste-btn" id="paste-btn">Paste</button>
+      </div>
+      <div class="extract-output">
+        <p class="extract-output-window" id="output-window"></p>
+        <button class="extract-output-btn" id="copy-btn">copy</button>
+      </div>
+    </section>
+    <script type="module" src="./main.js" defer></script>
+  </body>
+</html>
