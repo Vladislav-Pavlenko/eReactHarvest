@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eReactHarvest</title>
-    <link rel="icon" href="./public/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/harvest.css" />
+    <link rel="icon" href="./src/public/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/harvest.css" />
+    <link rel="stylesheet" href="./src/css/theme.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -16,20 +17,35 @@
   </head>
   <body>
     <section class="extract">
-      <h1 class="extract-title">Extract Css class for jsx markup</h1>
+      <h1 class="extract-title">Extract a css class from jsx markup</h1>
       <div class="extract-form">
         <label class="extract-form-label" for="markup-textarea"
           >Paste your markup</label
         >
         <textarea class="extract-form-textarea" id="markup-textarea"></textarea>
-        <button class="extract-form-btn" id="markup-btn">Convert</button
-        ><button class="extract-form-paste-btn" id="paste-btn">Paste</button>
+        <ul class="extract-form-ul">
+          <li class="extract-form-item">
+            <button class="extract-form-btn" id="markup-btn">Convert</button>
+          </li>
+          <li class="extract-form-item">
+            <button class="extract-form-btn" id="paste-btn">Paste</button>
+          </li>
+          <li class="extract-form-item">
+            <button class="extract-form-btn" id="reset-btn">Reset</button>
+          </li>
+        </ul>
       </div>
+      <h2>Your css classes</h2>
       <div class="extract-output">
         <p class="extract-output-window" id="output-window"></p>
-        <button class="extract-output-btn" id="copy-btn">copy</button>
+        <button class="extract-output-btn" id="copy-btn">Copy</button>
       </div>
     </section>
-    <script type="module" src="./main.js" defer></script>
+    <div class="feadback">
+      If you notice a bug or want this app to have another feature, please send
+      me an
+      <a class="feadback-link" href="mailto: vp632728@gmail.com">email</a>.
+    </div>
+    <script type="module" src="./src/main.js" defer></script>
   </body>
 </html>

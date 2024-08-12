@@ -1,7 +1,9 @@
 import "./js/copy-css.js";
 import "./js/paste-react.js";
 import "./js/harvest.js";
+import "./js/reset-textarea.js";
 {
+  //Test markup
   /* <div className={css.contact}>
         <div className={css.contact_container}>
           <IoPerson />
